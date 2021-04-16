@@ -9,29 +9,34 @@
     <body>
         <table>
             <caption>Produzidos e Vendidos</caption>
+            <colgroup>
+                <col>
+                <col span="2" style="background-color: green">
+                <col span="2" style="background-color: blue">
+            </colgroup>
             <thead>
                 <tr>
                     <th rowspan="2"></th>
-                    <th colspan="2">Loja 1</th> 
-                    <th colspan="2">Loja 2</th>
+                    <th colspan="2" scope="colgroup">Loja 1</th> 
+                    <th colspan="2" scope="colgroup">Loja 2</th>
                 </tr>
                 <tr>
-                    <th>Produzidos</th>
-                    <th>Vendidos</th>
-                    <th>Produzidos</th>
-                    <th>Vendidos</th>
+                    <th scope="col">Produzidos</th>
+                    <th scope="col">Vendidos</th>
+                    <th scope="col">Produzidos</th>
+                    <th scope="col">Vendidos</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <th>Refrigerantes</th>
+                    <th scope="row">Refrigerantes</th>
                     <td>100</td>
                     <td>83</td>
                     <td>120</td>
                     <td>75</td>
                 </tr>
                 <tr>
-                    <th>Bolachas</th>
+                    <th scope="row">Bolachas</th>
                     <td>230</td>
                     <td>176</td>
                     <td>230</td>
