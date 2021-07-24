@@ -1,16 +1,20 @@
+body {
+    background-color: black;
+}
+
 .init {
     color: white;
     font-size: 30px;
     text-align: center;
-    border: solid 5px navy;
+    border: solid 5px white;
     font-family: Helvetica, sans-serif;
     width: calc(100%-100px);
-    background-color: rgb(153, 34, 189);
+    background-color: rgb(173, 3, 200);
 
 }
 
 .init:hover {
-    background-color: orangered;
+    background-color: rgb(153, 34, 189);
 }
 
 .init::first-letter {

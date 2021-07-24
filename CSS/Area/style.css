@@ -1,0 +1,15 @@
+h1 {
+    display: block;
+}
+
+nav {
+    display: inline-block;
+    background-color: darkgrey;
+    width: 90px;
+}
+
+.cx, .dx, .ex {
+    color: white;
+    background-color: black;
+    padding: 10px 10px 10px 10px;
+}
