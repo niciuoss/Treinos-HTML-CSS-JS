@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body{
+      background-color: rgb(135, 202, 180);
+      color: darkred;
+      font: normal 20pt Arial;
+    }
+  </style>
+  <title>Treino</title>
+</head>
+<body>
+  <h1>Olá Mundo</h1>
+  <p>Aqui está o título</p>
+
+  <script>
+    /*window.alert('Sinal de alerta!'); 
+    window.confirm('Deseja continuar?'); //tela de confirmação
+    const nome = window.prompt('Qual o seu nome?'); //Recebe e retorna uma string 
+    window.alert('É um prazer te conhecer '+ nome); */
+    const n1 = window.prompt('Digite um valor: ');
+    const n2 = window.prompt('Digite mais um valor: ');
+    //const s = parseInt(n1) + parseInt(n2); //paseInt transforma a string em int
+    //const s = parsefloat(n1) + parseInt(n2); //paseFloat transforma a string em float
+    const s = Number(n1) + Number(n2); //Number transforma a string em um número
+    const n = String(s) + String(s); //String transforma o número em uma string. n.toString() é outra maneira
+    window.alert(`A soma dos dois valores é ${s}`);
+    window.alert(`E a sua concatenação é ${n1}${n2}`);
+    window.alert(`A concatenação da soma com ela mesma é ${n}`);
+  </script>
+</body>
+</html>

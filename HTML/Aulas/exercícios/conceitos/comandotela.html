@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body{
+      font: normal 20pt Arial;
+    }
+  </style>
+  <title>Exemplo</title>
+</head>
+<body>
+  
+  <script>
+    const nome = window.prompt('Qual o seu nome?');
+    document.write(`Olá ${nome}. Seu nome tem ${nome.length} letras<br>`);
+    document.write(`Seja bem vindo ${nome.toUpperCase()}<br>`); //minusculo seria toLowerCase()
+
+    const n1 = 1458.9874;
+    document.write(`O valor a seguir ${n1}<br>`);
+    document.write(`Fica igual a ${n1.toFixed(2)} com apenas duas casas decimais e<br>`);
+    document.write(`Fica igual a ${n1.toFixed(2).replace(".", ",")} trocando o ponto pela a vírgula<br>`);
+    //o comando abaixo localiza o valor para 'pt-BR' e o estilo vai ser em dinheiro ou seja "currency" e esse dinheiro vai ser em real 'BRL' (podendo ser usado 'USD' e 'EUR')
+    document.write(`Veja agora como fica esse valor em real: ${n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}`);
+  </script>
+</body>
+</html>
